@@ -21,7 +21,7 @@ const client = new ForgeClient({
   prefixes: [
     "!",
     "?"
-  ] // The prefixes to use for our bot!
+  ], // The prefixes to use for our bot!
   useInviteSystem: true
   })
 
