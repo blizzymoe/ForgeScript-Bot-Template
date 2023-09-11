@@ -2,7 +2,7 @@
 A bot template for BotForge (ForgeScript).
 <p align="center">
   <a href="https://discord.gg/hcJgjzPvqb"><img src="https://img.shields.io/discord/997899472610795580?logo=discord"></a>
-  <a href="https://github.com/kkrypt0nn/Python-Discord-Bot-Template/releases"><img src="https://img.shields.io/github/v/release/tryforge/ForgeScript"></a>
+  <a href="https://github.com/tryforge/ForgeScript/releases"><img src="https://img.shields.io/github/v/release/tryforge/ForgeScript"></a>
   <a href="https://github.com/tryforge/ForgeScript/commits/main"><img src="https://img.shields.io/github/last-commit/tryforge/ForgeScript"></a>
   <a href="https://github.com/tryforge/ForgeScript/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/tryforge/ForgeScript"></a>
   <a href="https://github.com/tryforge/ForgeScript"><img src="https://img.shields.io/github/languages/code-size/tryforge/ForgeScript"></a>
