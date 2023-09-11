@@ -1,26 +1,26 @@
 {
-    "name": "BotForge-Bot-Template",
-    "version": "1.0.0",
-    "description": "A bot template for BotForge (ForgeSCript).",
-    "main": "index.js",
-    "scripts": {
-    "start": "node index.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/yuminanase/BotForge-Bot-Template.git"
-    },
-    "keywords": [
-        "discord-bot-template",
-        "botforge-bot-template",
-    ],
-    "author": "BotForge",
-    "license": "ISC",
-    "dependencies": {
-        "@types/node": "^20.6.0",
-        "forgequickdb": "github:tryforge/ForgeQuickDB",
-        "forgescript": "1.0.4",
-        "node-fetch": "^3.3.2",
-        "typescript": "^5.2.2"
-    }
+	"name": "BotForge-Bot-Template",
+	"version": "1.0.0",
+	"description": "A bot template for BotForge (ForgeSCript).",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yuminanase/BotForge-Bot-Template.git"
+	},
+	"keywords": [
+		"discord-bot-template",
+		"botforge-bot-template"
+	],
+	"author": "BotForge",
+	"license": "ISC",
+	"dependencies": {
+		"@types/node": "^20.6.0",
+		"forgequickdb": "github:tryforge/ForgeQuickDB",
+		"forgescript": "1.0.4",
+		"node-fetch": "^3.3.2",
+		"typescript": "^5.2.2"
+	}
 }
