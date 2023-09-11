@@ -1,19 +1,14 @@
 {
-    "name": "Forgify",
+    "name": "A test bot",
     "version": "1.0.0",
-    "description": "Forgify - Forging discord servers!",
+    "description": "A bot template for BotForge (ForgeSCript).",
     "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "BotForge",
     "dependencies": {
-        "@types/node": "^18.0.6",
+        "@types/node": "^20.6.0",
         "forgequickdb": "github:tryforge/ForgeQuickDB",
-        "forgescript": "github:tryforge/ForgeScript-V2",
-        "node-fetch": "^3.2.6",
+        "forgescript": "github:tryforge/ForgeScript",
+        "node-fetch": "^3.3.2",
         "typescript": "^5.2.2"
     }
 }
