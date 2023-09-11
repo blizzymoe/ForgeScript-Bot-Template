@@ -1,2 +1,2 @@
-# Forgify
-A beta discord bot written in ForgeScript.
+# BotForge Bot Template
+A bot template for BotForge (ForgeScript).
