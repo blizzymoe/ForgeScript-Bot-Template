@@ -19,7 +19,7 @@
    "dependencies":{
       "@types/node":"^20.6.0",
       "forgequickdb":"github:tryforge/ForgeQuickDB",
-      "forgescript":"1.0.4",
+      "forgescript":"github:tryforge/ForgeScript",
       "node-fetch":"^3.3.2",
       "typescript":"^5.2.2"
    }
