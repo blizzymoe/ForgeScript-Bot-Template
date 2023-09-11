@@ -5,15 +5,15 @@
     "main": "index.js",
     "scripts": {
     "start": "node index.js"
-  },
-  "repository": {
+    },
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/yuminanase/BotForge-Bot-Template.git"
-  },
-  "keywords": [
+    },
+    "keywords": [
     "discord-bot-template",
     "botforge-bot-template",
-  ],
+    ],
     "author": "BotForge",
     "license": "ISC",
     "dependencies": {
