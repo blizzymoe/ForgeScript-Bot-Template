@@ -7,12 +7,12 @@
     "start": "node index.js"
     },
     "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yuminanase/BotForge-Bot-Template.git"
+        "type": "git",
+        "url": "git+https://github.com/yuminanase/BotForge-Bot-Template.git"
     },
     "keywords": [
-    "discord-bot-template",
-    "botforge-bot-template",
+        "discord-bot-template",
+        "botforge-bot-template",
     ],
     "author": "BotForge",
     "license": "ISC",
