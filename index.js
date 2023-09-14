@@ -70,7 +70,7 @@ const client = new ForgeClient({
     "!",
     "?"
   ], // The prefixes to use for our bot!
-  useInviteSystem: false
+  useInviteSystem: false // Set to true if you want to use invite system.
 })
 
 mkdir('/commands', { recursive: true }, (err) => {
