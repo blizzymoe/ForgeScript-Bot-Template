@@ -1,4 +1,3 @@
-import { mkdir } from 'node:fs';
 const { ForgeClient } = require("forgescript")
 const { ForgeQuickDB } = require("forgequickdb")
 const { token } = require("./config.json")
@@ -73,9 +72,5 @@ const client = new ForgeClient({
   useInviteSystem: false // Set to true if you want to use invite system.
 })
 
-mkdir('/commands', { recursive: true }, (err) => {
-  if (err) throw err;
-}); // Creates /commands, regardless of whether `/commands` exist.
-
-client.commands.load("./commands")
+client.commands.load("./commands") // Loads commands from a folder.
 client.login(token) // You can get your bot token on https://discord.com/developers/applications
