@@ -1,6 +1,9 @@
 const { ForgeClient } = require("forgescript")
 const { ForgeQuickDB } = require("forgequickdb")
 const { token } = require("./config.json")
+const { mkdirSync, existsSync } = require("node:fs")
+const path = "./commands"
+if (!existsSync(path)) mkdirSync(path, { recursive: true })
 
 const client = new ForgeClient({
   extensions: [
@@ -69,11 +72,9 @@ const client = new ForgeClient({
     "!",
     "?"
   ], // The prefixes to use for our bot!
-  useInviteSystem: false // Set to true if you want to use invite system.
+  useInviteSystem: false // Set to `true` if you want to use invite system.
 })
 
-import { mkdirSync } from "node:fs"
-mkdirSync("./commands")
-
-client.commands.load("./commands") // Loads commands from a folder.
+client.commands.load("./commands") // Load commands from a folder.
+console.log("Commands has been loaded successfully!")
 client.login(token) // You can get your bot token on https://discord.com/developers/applications
