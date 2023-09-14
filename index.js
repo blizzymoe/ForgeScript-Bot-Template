@@ -72,5 +72,8 @@ const client = new ForgeClient({
   useInviteSystem: false // Set to true if you want to use invite system.
 })
 
+import { mkdirSync } from "node:fs"
+mkdirSync("./commands")
+
 client.commands.load("./commands") // Loads commands from a folder.
 client.login(token) // You can get your bot token on https://discord.com/developers/applications
