@@ -1,29 +1,81 @@
+import { mkdir } from 'node:fs';
 const { ForgeClient } = require("forgescript")
 const { ForgeQuickDB } = require("forgequickdb")
+const { token } = require("./config.json")
 
 const client = new ForgeClient({
   extensions: [
-        new ForgeQuickDB()
-    ],
-    
-  intents: [
-    "DirectMessages",
-    "GuildMessages",
-    "Guilds",
-    "MessageContent" // This intent is privileged, must be whitelisted in dev portal, in your application.
+    new ForgeQuickDB()
   ],
 
+  intents: [
+    "Guilds",
+    "GuildMembers",
+    "GuildModeration",
+    "GuildEmojisAndStickers",
+    "GuildIntegrations",
+    "GuildWebhooks",
+    "GuildInvites",
+    "GuildVoiceStates",
+    "GuildPresences",
+    "GuildMessages",
+    "GuildMessageReactions",
+    "GuildMessageTyping",
+    "DirectMessages",
+    "DirectMessageReactions",
+    "DirectMessageTyping",
+    "MessageContent",
+    "GuildScheduledEvents",
+    "AutoModerationConfiguration",
+    "AutoModerationExecution" // This intent is privileged, must be enabled in https://discord.com/developers/applications
+  ],
   events: [
+    "channelCreate",
+    "channelDelete",
+    "channelUpdate",
+    "debug",
+    "emojiCreate",
+    "emojiDelete",
+    "emojiUpdate",
+    "error",
+    "guildAuditLogEntryCreate",
+    "guildCreate",
+    "guildDelete",
+    "guildMemberAdd",
+    "guildMemberRemove",
+    "guildMemberUpdate",
+    "guildUpdate",
+    "interactionCreate",
+    "inviteCreate",
+    "inviteDelete",
     "messageCreate",
-    "ready"
+    "messageDelete",
+    "messageReactionAdd",
+    "messageReactionRemove",
+    "messageUpdate",
+    "ready",
+    "roleCreate",
+    "roleDelete",
+    "roleUpdate",
+    "shardDisconnect",
+    "shardError",
+    "shardReady",
+    "shardReconnecting",
+    "shardResume",
+    "userUpdate",
+    "voiceStateUpdate"
   ], // Events our bot will act on
 
   prefixes: [
     "!",
     "?"
   ], // The prefixes to use for our bot!
-  useInviteSystem: true
-  })
+  useInviteSystem: false
+})
+
+mkdir('/commands', { recursive: true }, (err) => {
+  if (err) throw err;
+}); // Creates /commands, regardless of whether `/commands` exist.
 
 client.commands.load("./commands")
-client.login("bot_token") // You can get your bot token on https://discord.com/developers/applications
+client.login(token) // You can get your bot token on https://discord.com/developers/applications
