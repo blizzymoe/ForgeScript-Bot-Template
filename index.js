@@ -1,5 +1,5 @@
 const { ForgeClient } = require("forgescript")
-const { ForgeQuickDB } = require("forgequickdb")
+const { ForgeDB } = require("forgedb")
 const { token } = require("./config.json")
 const { mkdirSync, existsSync } = require("node:fs")
 const path = "./commands"
@@ -7,7 +7,7 @@ if (!existsSync(path)) mkdirSync(path, { recursive: true })
 
 const client = new ForgeClient({
   extensions: [
-    new ForgeQuickDB()
+    new ForgeDB()
   ],
 
   intents: [
@@ -76,5 +76,5 @@ const client = new ForgeClient({
 })
 
 client.commands.load("./commands") // Load commands from a folder.
-console.log("Commands has been loaded successfully!")
+console.log("Commands has been loaded successfully!") // Logs to console.
 client.login(token) // You can get your bot token on https://discord.com/developers/applications
