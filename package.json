@@ -17,7 +17,7 @@
    "author":"Yumi",
    "license":"Apache-2.0",
    "dependencies":{
-      "forgequickdb":"github:tryforge/ForgeQuickDB",
+      "forgedb":"github:tryforge/ForgeDB",
       "forgescript":"github:tryforge/ForgeScript"
    }
 }
