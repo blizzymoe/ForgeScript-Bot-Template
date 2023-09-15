@@ -3,7 +3,7 @@ module.exports = {
     aliases: ["ev", "execute", "exec"],
     code: `$if[$authorID==$botOwnerID;
 $eval[$message;true]
-$try[$function[$addMessageReactions[$channelID;$messageID;✅]]]]`,
+$function[$addMessageReactions[$channelID;$messageID;✅]]]`,
     type: "messageCreate", // The event to act on
     unprefixed: false // Set to true to make the command work without prefix.
 }
