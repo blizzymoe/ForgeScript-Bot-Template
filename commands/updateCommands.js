@@ -4,6 +4,6 @@ module.exports = {
     type: "messageCreate",
     code: `$if[$authorID==$botOwnerID;
         $updateCommands
-        $$function[$addMessageReactions[$channelID;$messageID;✅]]
+        $function[$addMessageReactions[$channelID;$messageID;✅]]
         ]`
 }
