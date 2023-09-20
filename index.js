@@ -1,9 +1,6 @@
 const { ForgeClient } = require("forgescript")
 const { ForgeDB } = require("forgedb")
 const { token } = require("./config.json")
-const { mkdirSync, existsSync } = require("node:fs")
-const path = "./commands"
-if (!existsSync(path)) mkdirSync(path, { recursive: true })
 
 const client = new ForgeClient({
   extensions: [
