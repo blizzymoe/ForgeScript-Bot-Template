@@ -74,4 +74,6 @@ const client = new ForgeClient({
 
 client.commands.load("./commands") // Load commands from a folder.
 console.log("Commands has been loaded successfully!") // Logs to console.
+client.commands.load("./slashes") // Load slash commands from a folder.
+console.log("Slash commands has been loaded successfully!") // Logs to console.
 client.login(token) // You can get your bot token on https://discord.com/developers/applications
